@@ -9,11 +9,4 @@ import { ListingPage } from '/listing';
 export class HomePage {
   constructor(public navCtrl: NavController) {}
 
-export class ListingPage {
-YourFancyButton: any;
-
-constructor(){
-this.YourFancyButton = ListingPage;
-}
-}
 }

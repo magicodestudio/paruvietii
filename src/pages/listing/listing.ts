@@ -14,9 +14,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'listing.html',
 })
 export class ListingPage {
-
+    YourFancyButton: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+  this.YourFancyButton = ListingPage;
   }
+
+
+
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListingPage');
