@@ -16,7 +16,7 @@ listing: ListingPage;
    
   }
     navigateToListing() {
-    this.navCtrl.setRoot(ListingPage);
+    this.navCtrl.setRoot(listing);
     }
 
 }
