@@ -28,7 +28,7 @@ export class ListingPage {
    /* function nuSelecta(e){
         e.preventDefault;
     }*/
-    
+    /*
     cv.querySelector('input').addEventListener('keyup', cautareVopseluri);
     function cautareVopseluri(){
         let textCautat = cv.querySelector('input').value;
@@ -39,7 +39,7 @@ export class ListingPage {
                 v[i].style.display = 'block';
             }
         }
-    }
+    }*/
     
   }
 

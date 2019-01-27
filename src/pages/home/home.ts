@@ -7,16 +7,13 @@ import { ListingPage } from '/listing';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  constructor(public navCtrl: NavController) {}
 
-listing: ListingPage;
+export class ListingPage {
+YourFancyButton: any;
 
-  constructor(public navCtrl: NavController) {
-   
-    
-   
-  }
-    navigateToListing() {
-    this.navCtrl.setRoot(listing);
-    }
+constructor(){
+this.YourFancyButton = ListingPage;
+}
 
 }
