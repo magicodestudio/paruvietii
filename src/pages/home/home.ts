@@ -15,5 +15,5 @@ YourFancyButton: any;
 constructor(){
 this.YourFancyButton = ListingPage;
 }
-
+}
 }
