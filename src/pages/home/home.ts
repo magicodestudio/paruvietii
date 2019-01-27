@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ListingPage } from '../listing/listing';
+import { ListingPage } from '/listing';
 
 @Component({
   selector: 'page-home',
@@ -8,13 +8,15 @@ import { ListingPage } from '../listing/listing';
 })
 export class HomePage {
 
+listing: ListingPage;
+
   constructor(public navCtrl: NavController) {
    
     
    
   }
-  navigateToListing(): void {
-       this.navCtrl.push(ListingPage);
-  }
+    navigateToListing() {
+    this.navCtrl.setRoot(listing);
+    }
 
 }
