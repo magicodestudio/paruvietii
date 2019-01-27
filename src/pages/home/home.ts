@@ -6,17 +6,19 @@ import { ListingPage } from '/listing';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+listing: ListingPage;
 export class HomePage {
 
-listing: ListingPage;
+
 
   constructor(public navCtrl: NavController) {
    
     
    
   }
-    navigateToListing() {
+   
+}
+ navigateToListing() {
     this.navCtrl.setRoot(listing);
     }
 
-}
