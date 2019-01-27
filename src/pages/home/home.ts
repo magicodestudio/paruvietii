@@ -10,8 +10,8 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
    
     import { LISTING } from '../pages/listing/listing';
-    pageNav(x){
-        this.navCtrl.setRoot(x);
+    pageNav(){
+        this.navCtrl.setRoot(LISTING);
     }
   }
 
