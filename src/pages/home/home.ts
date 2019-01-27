@@ -5,20 +5,18 @@ import { ListingPage } from '/listing';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
-});
-listing: ListingPage;
+})
 export class HomePage {
 
-
+listing: ListingPage;
 
   constructor(public navCtrl: NavController) {
    
     
    
   }
-   
-}
- navigateToListing() {
-    this.navCtrl.setRoot(listing);
+    navigateToListing() {
+    this.navCtrl.setRoot(ListingPage);
     }
 
+}
