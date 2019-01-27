@@ -24,10 +24,10 @@ export class ListingPage {
     let v = document.querySelectorAll('#vopseluri option');
     let cv = document.querySelector('#cauta-vopsea');
     
-    cv.addEventListener('click', nuSelecta(e));
-    function nuSelecta(e){
+    cv.addEventListener('click', (event) => event.preventDefault);
+   /* function nuSelecta(e){
         e.preventDefault;
-    }
+    }*/
     
     cv.querySelector('input').addEventListener('keyup', cautareVopseluri);
     function cautareVopseluri(){
