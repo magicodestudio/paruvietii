@@ -29,7 +29,9 @@ export class ListingPage {
     let v = document.querySelectorAll('#vopseluri option');
     let cv = document.querySelector('#cauta-vopsea');
     
-    cv.addEventListener('click', (event) => event.preventDefault);
+    cv.addEventListener('click', function(event){
+        event.preventDefault;
+    });
    /* function nuSelecta(e){
         e.preventDefault;
     }*/
