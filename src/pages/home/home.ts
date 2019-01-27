@@ -9,8 +9,8 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
    
-    import { listing } '../pages/listing';
-    YourFancyButton(x){
+    import { listing } from '../pages/listing';
+    pageNav(x){
         this.navCtrl.setRoot(x);
     }
   }
