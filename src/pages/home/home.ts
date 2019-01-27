@@ -8,12 +8,13 @@ import { listing } from '../pages/listing';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, listing) {
+  constructor(public navCtrl: NavController) {
    
     
-   navigateToListing(): void {
+   
+  }
+  navigateToListing(): void {
        this.navCtrl.push(listing);
     }
-  }
 
 }
