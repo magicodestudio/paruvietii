@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ListingPage } from '/listing';
 
 /**
  * Generated class for the ListingPage page.
@@ -15,10 +14,9 @@ import { ListingPage } from '/listing';
   templateUrl: 'listing.html',
 })
 export class ListingPage {
-    YourFancyButton: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   
-  this.YourFancyButton = ListingPage;
+ 
   }
 
 
