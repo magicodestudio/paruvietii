@@ -30,7 +30,8 @@ export class ListingPage {
     let cv = document.querySelector('#cauta-vopsea');
     
     cv.addEventListener('click', function(event){
-        event.preventDefault;
+        event.preventDefault();
+        console.log('miau')
     });
    /* function nuSelecta(e){
         e.preventDefault;
