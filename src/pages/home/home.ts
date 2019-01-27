@@ -14,7 +14,7 @@ export class HomePage {
    
   }
   navigateToListing(): void {
-       this.navCtrl.push(listing);
+       this.navCtrl.push(ListingPage);
   }
 
 }
