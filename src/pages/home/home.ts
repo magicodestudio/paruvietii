@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { listing } from '../pages/listing';
 
 @Component({
   selector: 'page-home',
@@ -7,11 +8,11 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, listing) {
    
-    import { listing } from '../pages/listing';
-    pageNav(){
-    this.navCtrl.setRoot(listing);
+    
+   navigateToListing(): void {
+       this.navCtrl.push(listing);
     }
   }
 
