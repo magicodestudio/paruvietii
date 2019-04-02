@@ -8,20 +8,39 @@
 
   <ion-navbar>
     <ion-title>listing</ion-title>
-    <button ion-button navPop>Button</button>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+<button ion-button (click)="vops()">vopseaua</button>
 
-<select id="vopseluri">
-    <option id="cauta-vopsea">
-        cauta
-    </option>
-    <option value="v1">vopsea unu</option>
-    <option value="v2">vopsea doi </option>
-</select>
+<div id="modal-costum" (click)="inchideModal()">
+    <div id="selecteaza-vopseluri">
+        <ion-input id="cauta-vopsea" placeholder="Cauta vopsea"></ion-input>
+        <div id="lista-vopseluri">
+            <ion-item>
+                <ion-label>Vopsea 1</ion-label>
+                <ion-checkbox [(ngModel)]="vopsea1"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Vopsea 2</ion-label>
+                <ion-checkbox [(ngModel)]="vopsea2"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Vella verde</ion-label>
+                <ion-checkbox [(ngModel)]="vella-verde"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Loreal rosu</ion-label>
+                <ion-checkbox [(ngModel)]="loreal-rosu"></ion-checkbox>
+            </ion-item>
+        </div>
+    </div>
+</div>
+
+
+
 
 </ion-content>

@@ -24,31 +24,36 @@ export class ListingPage {
 
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ListingPage');
     
-    let v = document.querySelectorAll('#vopseluri option');
-    let cv = document.querySelector('#cauta-vopsea');
     
-    cv.addEventListener('click', function(event){
-        event.preventDefault();
-        console.log('miau')
-    });
-   /* function nuSelecta(e){
-        e.preventDefault;
-    }*/
-    /*
-    cv.querySelector('input').addEventListener('keyup', cautareVopseluri);
-    function cautareVopseluri(){
-        let textCautat = cv.querySelector('input').value;
-        for (let i = 1; i < v.length; i++){
-            if (v[i].innerHTML.indexOf(textCautat) == -1){
-                v[i].style.display = 'none';
-            } else {
-                v[i].style.display = 'block';
-            }
-        }
-    }*/
+    
+    
     
   }
+  vops() {
+        document.getElementById('modal-costum').style.display = 'flex';
+
+        let cv = document.getElementById('cauta-vopsea').getElementsByTagName('input')[0],
+            v = document.getElementById('lista-vopseluri').getElementsByTagName('ion-item');
+
+        cv.addEventListener('keyup', cautareVopseluri);
+        function cautareVopseluri(){
+        let textCautat = cv.value;
+        for (let i = 0; i < v.length; i++){
+            if (v[i].getElementsByTagName('ion-label')[0].innerHTML.toLowerCase().indexOf(textCautat.toLowerCase()) == -1){
+                (v[i] as HTMLElement).style.display = 'none';
+            } else {
+                (v[i] as HTMLElement).style.display = 'flex';
+            }
+        }
+        }
+    }
+    inchideModal() {
+        let modalCostum = document.getElementById('modal-costum');
+        //console.log((event.target as HTMLElement).getAttribute('id'))
+        if ((event.target as HTMLElement).getAttribute('id') == 'modal-costum'){
+            (modalCostum as HTMLElement).style.display = 'none'
+        }
+    }
 
 }
