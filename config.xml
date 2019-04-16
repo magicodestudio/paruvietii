@@ -18,6 +18,7 @@
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashScreen" value="none" />
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="orientation" value="portrait" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />

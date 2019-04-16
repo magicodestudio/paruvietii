@@ -5,6 +5,7 @@ import { Platform } from 'ionic-angular';
 import { Network } from '@ionic-native/network';
 
 import { RegisterPage } from '../register/register';
+import { HomePage } from '../home/home';
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 
 /**
@@ -68,7 +69,9 @@ export class LoginPage {
               loader.dismiss();
 
               if (this.responseData.status == 'Authentication succesful!') {
-                this.presentToast('Success! id='+this.responseData.hrid, 'bottom', 'io-toast-green');
+                localStorage.setItem('userData', JSON.stringify(this.responseData));
+                this.navCtrl.setRoot(HomePage, {}, {animate: true, direction: 'forward'});
+                //this.presentToast('Success! id='+this.responseData.hrid, 'bottom', 'io-toast-green');
                 //this.navCtrl.push(LoginPage);
 
 

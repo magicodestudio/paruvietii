@@ -35,6 +35,14 @@ export class HomePage {
   				public platform: Platform, 
   				public loadingCtrl: LoadingController) {
 
+
+  	this.platform.ready().then(() => {     
+
+          if (!localStorage.getItem('userData')) {
+          	this.navCtrl.push(LoginPage);
+          }
+    });
+
   }
 
   ionViewDidEnter() {

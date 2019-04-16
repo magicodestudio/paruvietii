@@ -12,6 +12,7 @@ import { FormulasPage } from '../pages/formulas/formulas';
 import { ServicesPage } from '../pages/services/services';
 import { NewsPage } from '../pages/news/news';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
+import { LoginPage } from '../pages/login/login';
 
 
 import { timer } from 'rxjs/observable/timer';
@@ -84,5 +85,10 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+  }
+
+  logout() {
+    localStorage.removeItem('userData');
+    this.nav.setRoot(LoginPage, {}, {animate: true, direction: 'forward'});
   }
 }
