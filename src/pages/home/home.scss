@@ -1,3 +1,39 @@
 page-home {
-
+    .toolbar-background {
+        background: none;
+        color: #fff
+    }
+    .scroll-content {
+        margin-top: 0!important
+    }
+    .icon.icon-ios.ion-ios-search, .bar-button-default {
+        color: #fff
+    }
+    .home-image h3 {
+        text-align: center;
+        font-family: Avenir;
+        padding-top: 70px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 27px;
+    }
+    .icon.icon-ios.ion-ios-search,.icon.icon-md.ion-md-search, .bar-button-default {
+        color: #fff
+    }
+    #first-half {
+        height: calc(50vh - 67px);
+        height: 50vh;
+        background: rgba(255,0,0,.4);
+        margin: -17px -17px 0;    
+        background: #fff url('../../assets/imgs/home.jpg') no-repeat left top / cover
+    }
+    ion-item h4 {
+        font-family: Avenir Book;
+        color: #1d1d26
+    }
+    ion-item small {
+        color: rgba(29,29,38,.5);
+    }
+    
 }
+ 

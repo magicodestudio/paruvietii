@@ -152,4 +152,39 @@ body {
     font-size: 1.5rem !important;
     color: #fff;
     padding: 2.2rem !important;
+
+}
+ion-header ion-title {
+    text-align: center;
+}
+.toolbar-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+ion-navbar ion-icon {
+    padding:15px;
+}
+.icon.icon-ios.ion-ios-log-out {
+    float: right;
+}
+.icon.icon-ios.ion-ios-add, .icon.icon-md.ion-md-add {
+    color: #fff;
+    background: #485255;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 32px;
+    border-radius: 50%;
+    line-height: 44px;
+    z-index: 1
+
+}
+#usermug {
+    display: block;
+    margin: 15px auto;
+
 }

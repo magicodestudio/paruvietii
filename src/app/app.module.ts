@@ -5,9 +5,16 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
-
+import { SettingsPage } from '../pages/settings/settings';
+import { ClientsPage } from '../pages/clients/clients';
+import { CalendarPage } from '../pages/calendar/calendar';
+import { FormulasPage } from '../pages/formulas/formulas';
+import { ServicesPage } from '../pages/services/services';
+import { NewsPage } from '../pages/news/news';
+import { MyProfilePage } from '../pages/my-profile/my-profile';
 //import { StatusBar } from '@ionic-native/status-bar';
 //import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -15,24 +22,35 @@ import { Network } from '@ionic-native/network';
 import { Camera } from '@ionic-native/camera';
 import { File } from '@ionic-native/file';
 import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
-
 import { HttpModule} from '@angular/http';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
+
     LoginPage,
-    RegisterPage
+    RegisterPage,
+
+    SettingsPage,
+    ClientsPage,
+    CalendarPage, 
+    FormulasPage,
+    ServicesPage,
+    NewsPage, 
+    MyProfilePage
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpModule,
     HttpClientModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -40,7 +58,15 @@ import { HttpClientModule } from '@angular/common/http';
     HomePage,
     ListPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    SettingsPage,
+    ClientsPage,
+    CalendarPage, 
+    FormulasPage,
+    ServicesPage,
+    NewsPage, 
+    MyProfilePage
+
   ],
   providers: [
     //StatusBar,

@@ -5,9 +5,7 @@ import { Network } from '@ionic-native/network';
 import { Camera } from '@ionic-native/camera';
 import { File } from '@ionic-native/file';
 import { FileTransfer } from '@ionic-native/file-transfer';
-
 import { LoginPage } from '../login/login';
-
 declare var cordova: any;
 
 @Component({
@@ -99,9 +97,11 @@ export class HomePage {
 
     	actionSheet.present();
   	}
+/* SA DESCHIDEM DACAS NU E LOCALSTORAGE ID user - cu push, la load!!!!!!
   	public openloginpage() {
   		this.navCtrl.push(LoginPage);
   	}
+*/
 
 
   	public takePicture(sourceType) {
@@ -209,4 +209,21 @@ export class HomePage {
   		});
 	}
 
+    
+    ngAfterViewInit() {
+        
+        console.log('hello')
+        var x = new Date();
+        var y = x.getHours();
+        if (y < 12) {  
+            document.getElementById('day').innerHTML = ' Morning';
+        } else if (y < 18) {
+            document.getElementById('day').innerHTML = ' Afternoon';
+        } else {
+            document.getElementById('day').innerHTML = ' Evening';
+        }
+    }
+
 }
+
+
