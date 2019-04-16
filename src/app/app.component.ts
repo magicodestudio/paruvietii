@@ -5,6 +5,13 @@ import { Nav, Platform } from 'ionic-angular';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { SettingsPage } from '../pages/settings/settings';
+import { ClientsPage } from '../pages/clients/clients';
+import { CalendarPage } from '../pages/calendar/calendar';
+import { FormulasPage } from '../pages/formulas/formulas';
+import { ServicesPage } from '../pages/services/services';
+import { NewsPage } from '../pages/news/news';
+import { MyProfilePage } from '../pages/my-profile/my-profile';
 
 import { timer } from 'rxjs/observable/timer';
 
@@ -28,7 +35,17 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Overview', component: ListPage },
+      { title: 'My Profile', component: MyProfilePage },
+      { title: 'Clients', component: ClientsPage },
+      { title: 'Calendar', component: CalendarPage },
+      { title: 'Formulas', component: FormulasPage },
+      { title: 'Services', component: ServicesPage },
+      { title: 'Settings', component: SettingsPage },
+      { title: 'News', component: NewsPage }
+        
+    
+    
     ];
 
   }

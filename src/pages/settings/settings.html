@@ -1,0 +1,86 @@
+<!--
+  Generated template for the ListingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+
+    <ion-title>SETTINGS</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list class="settings-form">
+
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input type="text" value="John Doe"></ion-input>
+  </ion-item>
+  <!--
+<ion-item>
+    <ion-label>Phone</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>E-mail</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+-->
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" value="parola"></ion-input>
+  </ion-item>
+
+<ion-item>
+    Privacy
+  </ion-item>
+  
+  <ion-item>
+    Notification
+  </ion-item>
+
+
+</ion-list>
+
+
+<button ion-button (click)="vops()">vopseaua</button>
+
+<div id="modal-costum" (click)="inchideModal()">
+    <div id="selecteaza-vopseluri">
+        <ion-input id="cauta-vopsea" placeholder="Cauta vopsea"></ion-input>
+        <div id="lista-vopseluri">
+            <ion-item>
+                <ion-label>Vopsea 1</ion-label>
+                <ion-checkbox [(ngModel)]="vopsea1"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Vopsea 2</ion-label>
+                <ion-checkbox [(ngModel)]="vopsea2"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Vella verde</ion-label>
+                <ion-checkbox [(ngModel)]="vella-verde"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Loreal rosu</ion-label>
+                <ion-checkbox [(ngModel)]="loreal-rosu"></ion-checkbox>
+            </ion-item>
+        </div>
+    </div>
+</div>
+
+
+
+
+</ion-content>

@@ -34,6 +34,8 @@ export class HomePage {
   				public actionSheetCtrl: ActionSheetController, 
   				public platform: Platform, 
   				public loadingCtrl: LoadingController) {
+      
+
 
   }
 
@@ -203,5 +205,22 @@ export class HomePage {
     		this.presentToast('Error while uploading file.', 'bottom', 'io-toast-red');
   		});
 	}
+    
+    ngAfterViewInit() {
+        
+        console.log('hello')
+        var x = new Date();
+        var y = x.getHours();
+        if (y < 12) {  
+            document.getElementById('day').innerHTML = ' Morning';
+        } else if (y < 18) {
+            document.getElementById('day').innerHTML = ' Afternoon';
+        } else {
+            document.getElementById('day').innerHTML = ' Evening';
+        }
+    }
 
+    
 }
+
+

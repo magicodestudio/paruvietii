@@ -3,18 +3,18 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-icon ios="ios-search" md="md-search"></ion-icon>
+    
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    homepage
-  </p>
-<ion-item>
-  <ion-buttons>
+<ion-content padding class="home-image">
+  <div id="first-half"><h3>Good <span id="day">Morning</span>!</h3>
+    <img id="usermug" src="assets/imgs/mugshot.png">
+    <ion-icon ios="ios-add" md="md-add"></ion-icon>
+</div>
+ <!-- <ion-item>
+<ion-buttons>
       <button ion-button icon-left (click)="presentActionSheet()">
         <ion-icon name="camera"></ion-icon>Select Image
       </button>
@@ -23,5 +23,19 @@
       </button>
     </ion-buttons>
 </ion-item>
+-->
+
+    <ion-item>
+        <h4>Appointment <span class="appointee">Janet</span></h4>
+        <small class="appointment-time">8 - 10 am</small>
+    </ion-item>
+    <ion-item>
+        <h4>Appointment <span class="appointee">Janet</span></h4>
+        <small class="appointment-time">8 - 10 am</small>
+    </ion-item>
+    <ion-item>
+        <h4>Appointment <span class="appointee">Janet</span></h4>
+        <small class="appointment-time">8 - 10 am</small>
+    </ion-item>
 
 </ion-content>

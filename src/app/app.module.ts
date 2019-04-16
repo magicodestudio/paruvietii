@@ -5,6 +5,13 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { SettingsPage } from '../pages/settings/settings';
+import { ClientsPage } from '../pages/clients/clients';
+import { CalendarPage } from '../pages/calendar/calendar';
+import { FormulasPage } from '../pages/formulas/formulas';
+import { ServicesPage } from '../pages/services/services';
+import { NewsPage } from '../pages/news/news';
+import { MyProfilePage } from '../pages/my-profile/my-profile';
 
 //import { StatusBar } from '@ionic-native/status-bar';
 //import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,7 +25,14 @@ import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    SettingsPage,
+    ClientsPage,
+    CalendarPage, 
+    FormulasPage,
+    ServicesPage,
+    NewsPage, 
+    MyProfilePage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +42,14 @@ import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    SettingsPage,
+    ClientsPage,
+    CalendarPage, 
+    FormulasPage,
+    ServicesPage,
+    NewsPage, 
+    MyProfilePage
   ],
   providers: [
     //StatusBar,
