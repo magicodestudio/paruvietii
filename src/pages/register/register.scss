@@ -1,0 +1,137 @@
+page-register {
+
+	.toolbar-background {
+	    border-color: transparent;
+	    background: transparent;
+	}
+	.bar-button-default-md {
+		color: #fff;
+	}
+	.header::after {
+	    display: none!important;
+	}
+
+	#io-register {
+		background: url('../../assets/imgs/registerbackground.jpg') no-repeat center center;
+		background-size: cover;
+		position: relative;
+	}
+	.item {
+		background: transparent;
+		color: #fff;
+		font-weight: 300;
+	    padding: 7px 0 7px 16px;
+	}
+	.item .item-inner {
+		border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+	    margin-right: 16px;
+	}
+	.item.item-input-has-focus .item-inner {
+		border-bottom-color: #36d4bc !important;
+		-webkit-box-shadow: inset 0 -1px 0 0 #36d4bc !important;
+		box-shadow: inset 0 -1px 0 0 #36d4bc !important;
+	}
+	.label {
+		color: #fff !important;
+		font-weight: 300;
+		font-size: 14px;
+    	line-height: 20px;
+	}
+	.label ion-img {
+	    background: transparent;
+	    float: left;
+	    margin-right: 8px;
+	}
+	#io-register-button {
+		background-color: #36d4bc !important;
+		height: 5.6rem;
+	    font-size: 1.6rem;
+	    font-weight: 400;
+	    text-transform: capitalize;
+	    color: #fff;
+	    box-shadow: none !important;
+        margin-top: 0;
+	}
+	.list .item.item-input:last-child .item-inner {
+	    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+	}
+	.list .item.item-input-has-focus:last-child,
+	.list .item:last-child  {
+		border-bottom: 0 !important;
+		box-shadow:none !important;
+	}
+	.list.io-inputs {
+
+	}
+	.io-register-logo {
+        width: 100%;
+	    height: auto;
+	    text-align: center;
+	    color: #fff;
+	    font-weight: 300;
+	    font-size: 2em;
+	    letter-spacing: 1px;
+	    margin: 8vh 0;
+	}
+	.forgotpass {
+		color: rgba(255,255,255,.5);
+	    font-size: 0.9em;
+	    font-weight: 300;
+	    float: right;
+	    margin-top: 10px;
+	    padding-right: 20px;
+	}
+	.io-signin {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	    color: rgba(255,255,255,.5);
+	    font-size: 0.9em;
+	    padding: 3vh 0;
+	}
+	.io-signin .io-signin-link {
+	    color: #fff;
+	    font-weight: 400;
+	    margin-left: 5px;
+	}
+	.io-accept {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	    color: rgba(255, 255, 255, 0.5);
+	    font-size: 0.9em;
+	    margin-top: 12vh;
+	    margin-bottom: 2vh;
+	    line-height:18px;
+	}
+	.checkbox {
+	    position: relative;
+	    display: inline-flex;
+	    margin-right: 5px;
+	}
+	.checkbox .checkbox-icon {
+	    border-radius: 50%;
+	    position: relative;
+	    width: 18px;
+	    height: 18px;
+	    border-width: 1px;
+	    border-style: solid;
+	    border-color: #fff;
+	    background-color: transparent;
+	}
+	.checkbox .checkbox-checked .checkbox-inner {
+	    left: 6px;
+	    top: 0px;
+	    position: absolute;
+	    width: 7px;
+	    height: 12px;
+	    border-width: 2px;
+	    border-top-width: 0;
+	    border-left-width: 0;
+	    border-style: solid;
+	    border-color: #fff;
+	    -webkit-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	}
+
+}

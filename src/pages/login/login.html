@@ -1,0 +1,25 @@
+
+<ion-content nopadding id="io-login">
+
+<ion-img src="../../assets/imgs/login-logo.png" class="io-login-logo"></ion-img>
+
+<ion-list class="io-inputs">
+	<ion-item>		
+    	<ion-label fixed><ion-img src="../../assets/imgs/login-icon-email.png"></ion-img> E-mail</ion-label>
+    	<ion-input type="email" class="io-input" [(ngModel)]="userData.email"></ion-input>
+  	</ion-item>
+
+  	<ion-item>  		
+    	<ion-label fixed><ion-img src="../../assets/imgs/login-icon-pass.png"></ion-img> Password</ion-label>
+    	<ion-input type="password" class="io-input" [(ngModel)]="userData.parola"></ion-input>
+  	</ion-item>
+  	  		
+	<span class="forgotpass">Forgot Password?</span>
+
+</ion-list>
+		
+<button ion-button full id="io-login-button" (click)="authlogin()">Sign In</button>
+
+<div class="io-signup">Don't have an account? <span class="io-signup-link" (click)="gotoRegister()"> Sign Up!</span></div>
+
+</ion-content>

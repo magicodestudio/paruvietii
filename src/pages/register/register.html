@@ -1,0 +1,43 @@
+
+<ion-header>
+  <ion-navbar>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content nopadding id="io-register">
+
+<h1 class="io-register-logo">Sign Up</h1>
+
+<ion-list class="io-inputs">
+	<ion-item>  		
+    	<ion-label fixed><ion-img src="../../assets/imgs/login-icon-name.png"></ion-img> Name</ion-label>
+    	<ion-input type="text" class="io-input" [(ngModel)]="userData.nume"></ion-input>
+  	</ion-item>
+	<ion-item>  		
+    	<ion-label fixed><ion-img src="../../assets/imgs/login-icon-name.png"></ion-img> Surname</ion-label>
+    	<ion-input type="text" class="io-input" [(ngModel)]="userData.prenume"></ion-input>
+  	</ion-item>
+
+	<ion-item>		
+    	<ion-label fixed><ion-img src="../../assets/imgs/login-icon-email.png"></ion-img> E-mail</ion-label>
+    	<ion-input type="email" class="io-input" [(ngModel)]="userData.email"></ion-input>
+  	</ion-item>
+
+  	<ion-item>  		
+    	<ion-label fixed><ion-img src="../../assets/imgs/login-icon-pass.png"></ion-img> Password</ion-label>
+    	<ion-input type="password" class="io-input" [(ngModel)]="userData.parola"></ion-input>
+  	</ion-item>
+
+
+</ion-list>
+
+<div class="io-accept"><ion-checkbox [(ngModel)]="userData.acord"></ion-checkbox> I accept the <span class="io-accept-link" > Terms and Conditions!</span></div>
+
+<button ion-button full id="io-register-button" (click)="signIn()">Join</button>
+
+<div class="io-signin">Already have an account? <span class="io-signin-link" (click)="gotoLogin()"> Sign In!</span></div>
+
+</ion-content>
+

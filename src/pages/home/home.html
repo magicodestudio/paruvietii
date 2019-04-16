@@ -1,20 +1,35 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  <h3>Ionic Menu Starter</h3>
+
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    homepage
   </p>
-  <div class="iodesign">
-  	ionut a adaugat o chestie de pe contul personal in ramura ionut
-  </div>
-  <div class="iodesign">
-  	alin a adaugat un div6
-  </div>
+<ion-item>
+  <ion-buttons>
+      <button ion-button icon-left (click)="presentActionSheet()">
+        <ion-icon name="camera"></ion-icon>Select Image
+      </button>
+      <button ion-button icon-left (click)="uploadImage()" [disabled]="lastImage === null">
+        <ion-icon name="cloud-upload"></ion-icon>Upload
+      </button>
+    </ion-buttons>
+</ion-item>
+
+<ion-item>
+  <ion-buttons>
+      <button ion-button icon-left (click)="openloginpage()">
+        <ion-icon name="log-in"></ion-icon>LOGIN
+      </button>
+    </ion-buttons>
+</ion-item>
+
 </ion-content>
